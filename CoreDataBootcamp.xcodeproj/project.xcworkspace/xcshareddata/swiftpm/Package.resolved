@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "awesomenetworkpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/manasdevslopes/AwesomeNetworkPackage.git",
+      "state" : {
+        "revision" : "3ca111aea083291069cf49f21cde0695661bd669",
+        "version" : "1.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}

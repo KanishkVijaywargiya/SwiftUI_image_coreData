@@ -11,6 +11,14 @@
 		047B88672972BB30001B1055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B88662972BB30001B1055 /* ContentView.swift */; };
 		047B88692972BB34001B1055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047B88682972BB34001B1055 /* Assets.xcassets */; };
 		047B886C2972BB34001B1055 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047B886B2972BB34001B1055 /* Preview Assets.xcassets */; };
+		04A57A912976B69600B6726A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57A902976B69600B6726A /* HomeView.swift */; };
+		04A57A932976B7D100B6726A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57A922976B7D100B6726A /* ApiManager.swift */; };
+		04A57A962976B87D00B6726A /* ImageCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A57A942976B87D00B6726A /* ImageCoreData.xcdatamodeld */; };
+		04A57A982976B89000B6726A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57A972976B89000B6726A /* Persistence.swift */; };
+		04A57A9B2976B9E900B6726A /* ImageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57A992976B9E800B6726A /* ImageEntity+CoreDataClass.swift */; };
+		04A57A9C2976B9E900B6726A /* ImageEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57A9A2976B9E800B6726A /* ImageEntity+CoreDataProperties.swift */; };
+		04C43EA42976CDEB00E3FE72 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C43EA32976CDEB00E3FE72 /* ImageData.swift */; };
+		04C43EA72976F27100E3FE72 /* AwesomeNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 04C43EA62976F27100E3FE72 /* AwesomeNetwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		047B88662972BB30001B1055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		047B88682972BB34001B1055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047B886B2972BB34001B1055 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04A57A902976B69600B6726A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		04A57A922976B7D100B6726A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		04A57A952976B87D00B6726A /* ImageCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageCoreData.xcdatamodel; sourceTree = "<group>"; };
+		04A57A972976B89000B6726A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		04A57A992976B9E800B6726A /* ImageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		04A57A9A2976B9E800B6726A /* ImageEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		04C43EA32976CDEB00E3FE72 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C43EA72976F27100E3FE72 /* AwesomeNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +67,9 @@
 		047B88632972BB30001B1055 /* CoreDataBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				04A57A8F2976B68700B6726A /* Model */,
+				04A57A8E2976B68300B6726A /* View */,
+				04A57A8D2976B67D00B6726A /* ViewModel */,
 				047B88642972BB30001B1055 /* CoreDataBootcampApp.swift */,
 				047B88662972BB30001B1055 /* ContentView.swift */,
 				047B88682972BB34001B1055 /* Assets.xcassets */,
@@ -65,6 +84,34 @@
 				047B886B2972BB34001B1055 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04A57A8D2976B67D00B6726A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A57A922976B7D100B6726A /* ApiManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04A57A8E2976B68300B6726A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04A57A902976B69600B6726A /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04A57A8F2976B68700B6726A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A57A992976B9E800B6726A /* ImageEntity+CoreDataClass.swift */,
+				04A57A9A2976B9E800B6726A /* ImageEntity+CoreDataProperties.swift */,
+				04A57A972976B89000B6726A /* Persistence.swift */,
+				04A57A942976B87D00B6726A /* ImageCoreData.xcdatamodeld */,
+				04C43EA32976CDEB00E3FE72 /* ImageData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,9 @@
 			dependencies = (
 			);
 			name = CoreDataBootcamp;
+			packageProductDependencies = (
+				04C43EA62976F27100E3FE72 /* AwesomeNetwork */,
+			);
 			productName = CoreDataBootcamp;
 			productReference = 047B88612972BB30001B1055 /* CoreDataBootcamp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,9 @@
 				Base,
 			);
 			mainGroup = 047B88582972BB30001B1055;
+			packageReferences = (
+				04C43EA52976F27100E3FE72 /* XCRemoteSwiftPackageReference "AwesomeNetworkPackage" */,
+			);
 			productRefGroup = 047B88622972BB30001B1055 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A57A962976B87D00B6726A /* ImageCoreData.xcdatamodeld in Sources */,
+				04A57A9B2976B9E900B6726A /* ImageEntity+CoreDataClass.swift in Sources */,
+				04A57A9C2976B9E900B6726A /* ImageEntity+CoreDataProperties.swift in Sources */,
+				04A57A912976B69600B6726A /* HomeView.swift in Sources */,
+				04C43EA42976CDEB00E3FE72 /* ImageData.swift in Sources */,
 				047B88672972BB30001B1055 /* ContentView.swift in Sources */,
+				04A57A982976B89000B6726A /* Persistence.swift in Sources */,
 				047B88652972BB30001B1055 /* CoreDataBootcampApp.swift in Sources */,
+				04A57A932976B7D100B6726A /* ApiManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +401,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04C43EA52976F27100E3FE72 /* XCRemoteSwiftPackageReference "AwesomeNetworkPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/manasdevslopes/AwesomeNetworkPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04C43EA62976F27100E3FE72 /* AwesomeNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04C43EA52976F27100E3FE72 /* XCRemoteSwiftPackageReference "AwesomeNetworkPackage" */;
+			productName = AwesomeNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		04A57A942976B87D00B6726A /* ImageCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04A57A952976B87D00B6726A /* ImageCoreData.xcdatamodel */,
+			);
+			currentVersion = 04A57A952976B87D00B6726A /* ImageCoreData.xcdatamodel */;
+			path = ImageCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 047B88592972BB30001B1055 /* Project object */;
 }
